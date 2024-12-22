@@ -1,10 +1,11 @@
-# Hi. 
-
 # API Documentation
 
-## Endpoints
+# Introduction
+Application uses **Java 17** and **H2 Database** <br>
+To run application use
+> mvn spring-boot:run
 
-### basic port: 8080
+default port: *8080*
 
 ### 1. Start a New Session
 
@@ -36,7 +37,7 @@ Cart with 2f4a978932c84c has been created. Use the sessionId to identify your sh
 Returns a `ResponseEntity` containing a `HashMap<String, Integer>` with the product details and the updated quantity.
 ```json
 {
-    "Item13": 7
+  "Item13": 7
 }
 ```
 
@@ -83,19 +84,19 @@ Headers:
 **Example response**
 ```json
 {
-"sessionId": "2f4a978932c84c",
-"listOfItems": [
+  "sessionId": "2f4a978932c84c",
+  "listOfItems": [
     {
-        "name": "Item5",
-        "quantity": 2,
-        "finalPrice": 20
+      "name": "Item5",
+      "quantity": 2,
+      "finalPrice": 20
     },
     {
-        "name": "Item10",
-        "quantity": 1,
-        "finalPrice": 3
+      "name": "Item10",
+      "quantity": 1,
+      "finalPrice": 3
     }
-]
+  ]
 }
 ```
 ## 4. Scan Product
@@ -127,10 +128,10 @@ Headers:
 ** Example response: **
 ```json
 {
-    "id": 10,
-    "item": "Item10",
-    "normalPrice": 100.0,
-    "requiredQuantity": null,
-    "specialPrice": null
+  "id": 10,
+  "item": "Item10",
+  "normalPrice": 100.0,
+  "requiredQuantity": null,
+  "specialPrice": null
 }
 ```
