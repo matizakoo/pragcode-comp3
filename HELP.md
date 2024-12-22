@@ -1,10 +1,11 @@
-# Hi. 
-
 # API Documentation
 
-## Endpoints
+# Introduction
+Application uses **Java 17** and **H2 Database** <br>
+To run application use
+> mvn spring-boot:run
 
-### basic port: 8080
+default port: *8080*
 
 ### 1. Start a New Session
 
